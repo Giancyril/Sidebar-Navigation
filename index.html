@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Left Navbar </title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <div class="logo_name">FRONT END</div>
+      </div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search here">
+        <span class="tooltip">Search</span>
+      </li>
+
+      <li>
+        <a href="#">
+            <i class='bx bxs-user'></i>
+            <span class="links_name">Users</span>
+          </a>
+          <span class="tooltip">Users</span>
+          
+
+          <li>
+            <a href="#">
+              <i class='bx bxs-user'></i>
+              <span class="links_name">Accounts</span>
+            </a>
+            <span class="tooltip">Accounts</span>
+          </li>
+          
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-user'></i>
+          <span class="links_name">Temp Users</span>
+        </a>
+        <span class="tooltip">Temp Users</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-plane'></i>
+          <span class="links_name">Total Number of Users</span>
+        </a>
+        <span class="tooltip">Total Number of Users</span>
+      </li>
+
+      
+      <li>
+        <a href="#">
+          <i class='bx bxs-paper-plane'></i>
+          <span class="links_name">Mail</span>
+        </a>
+        <span class="tooltip">Mail</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="home_content">
+    <div class="text">
+      <header id="showcase" class="container">
+      </header>
+      <div id="content" class="container">
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+
+    btn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }    
+    searchBtn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
