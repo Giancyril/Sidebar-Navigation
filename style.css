@@ -278,7 +278,6 @@ body{
   padding: 10px 20px;
   opacity: 0;
   animation-name: btn;
-  animation-duration: 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   transition-property: transform;
