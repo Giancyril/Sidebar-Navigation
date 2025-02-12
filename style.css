@@ -55,9 +55,10 @@ nav ul li a{
 
 
 nav ul li.active a {
-  color: cyan;
+  color: #D3D3D3;
   background: #1e1e1e;
-  border-left-color: cyan;
+  border-left-color: 
+  #808080;
 }
 
 
@@ -144,8 +145,11 @@ nav ul li a span.rotate{
 }
 
 .box:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  height: 120px; 
-  padding: 30px 40px;
-}
+    transform: translateY(-1px); 
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    height: auto; 
+    padding: 22px 40px; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease, padding 0.2s ease;
+  }
+  
+
